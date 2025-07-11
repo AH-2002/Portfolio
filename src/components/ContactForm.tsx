@@ -35,30 +35,26 @@ export default function ContactForm() {
             if (res.ok) {
                 setStatus("success");
                 setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
-
-                // ✅ Clear message after 3 seconds
                 setTimeout(() => setStatus("idle"), 3000);
             } else {
                 setStatus("error");
                 setTimeout(() => setStatus("idle"), 3000);
             }
-        } catch (error) {
+        } catch (_) {
             setStatus("error");
             setTimeout(() => setStatus("idle"), 3000);
         }
     };
 
-
     return (
         <div className="bg-[#140c1c] rounded-lg p-4 sm:p-10">
             <h1 className="md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-2xl md:text-3xl lg:text-[2.5rem] font-bold bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent">
-                Let's work together
+                Let&rsquo;s work together
             </h1>
             <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm">
-                I'm available for freelance work, full-time opportunities, or collaborative projects. Let's connect and discuss how I can contribute to your team.
+                I&rsquo;m available for freelance work, full-time opportunities, or collaborative projects. Let&rsquo;s connect and discuss how I can contribute to your team.
             </p>
 
-            {/* ✅ Success / Error Message */}
             {status === "success" && (
                 <p className="mt-4 text-green-400 font-medium">✅ Message sent successfully!</p>
             )}
