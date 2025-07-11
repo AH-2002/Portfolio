@@ -40,7 +40,7 @@ export default function ContactForm() {
                 setStatus("error");
                 setTimeout(() => setStatus("idle"), 3000);
             }
-        } catch (_) {
+        } catch {
             setStatus("error");
             setTimeout(() => setStatus("idle"), 3000);
         }
