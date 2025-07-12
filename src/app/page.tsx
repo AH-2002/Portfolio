@@ -8,14 +8,13 @@ export default function Home() {
 
 
   return (
-    <section>
+    <div className="overflow-x-hidden">
       <AOSInitializer />
-
       <Hero />
       <About />
       <Projects />
       <Skills />
       <Contacts />
-    </section>
+    </div>
   );
 }

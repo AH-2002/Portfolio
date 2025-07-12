@@ -18,14 +18,18 @@ export default function Hero() {
         <div data-aos="fade-left" data-aos-delay="200" className="description my-6 text-sm md:text-base text-gray-300">
           <p>{personalInfo.description}</p>
         </div>
-        <div className="hero-button flex justify-start">
-          <button data-aos="zoom-in" data-aos-delay="300" className="md:pc-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-blue-900">
-            <a href="/Abdelrahman-Hamada-Frontend-Resume.pdf"
+        <div className="hero-button flex flex-col sm:flex-row sm:justify-start w-full gap-4 mt-8">
+          <button
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-blue-700 hover:bg-blue-900"
+          >
+            <a
+              href="/Abdelrahman-Hamada-Frontend-Resume.pdf"
               download
-              className="flex items-center space-x-2">
-              <span>
-                Download CV
-              </span>
+              className="flex items-center justify-center gap-2"
+            >
+              <span>Download CV</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -42,13 +46,18 @@ export default function Hero() {
               </svg>
             </a>
           </button>
-          <button data-aos="zoom-out" data-aos-delay="300" className="ml-5 md:pc-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-[#8750f7] hover:bg-[#6d3fd0]">
+
+          <button
+            data-aos="zoom-out"
+            data-aos-delay="300"
+            className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-[#8750f7] hover:bg-[#6d3fd0]"
+          >
             <a
               href="https://github.com/AH-2002"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2">
-
+              className="flex items-center justify-center gap-2"
+            >
               <span>Visit GitHub</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,11 +71,10 @@ export default function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-
             </a>
           </button>
-
         </div>
+
       </div>
       <div data-aos="zoom-in" data-aos-delay="400"
         className="personalImage mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden">
