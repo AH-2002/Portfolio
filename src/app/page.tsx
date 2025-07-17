@@ -8,7 +8,7 @@ export default function Home() {
 
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-hidden">
       <AOSInitializer />
       <Hero />
       <About />
