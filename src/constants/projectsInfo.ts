@@ -20,7 +20,7 @@ export const projects: projectsType[] = [
     {
         title: "Social Media App",
         description: "A social platform using React, Redux Toolkit, and DummyJSON API with full authentication.",
-        github: "https://github.com/AH-2002/social-media",
+        github: "https://github.com/AH-2002/Ze",
         live: "https://ze-drab.vercel.app/",
         image: "/images/zee.png",
         type: "frameWork"
