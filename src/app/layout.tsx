@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${font.className}`}
       >
-        <div className="hidden md:block">
+        <div>
           <AnimatedCursor
             innerSize={8}
             outerSize={35}

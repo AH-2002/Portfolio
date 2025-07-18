@@ -1,4 +1,6 @@
+import { navLinks } from '@/constants/navLinks'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -13,15 +15,21 @@ export default function Footer() {
           className="mx-auto"
         />
       </div>
-      <div className="flex items-center flex-wrap justify-center space-x-10 space-y-4 text-white font-bold">
-        <div>Home</div>
-        <div>About</div>
-        <div>Projects</div>
-        <div>Skills</div>
-        <div>Contact</div>
+      <div className=" flex justify-center items-center space-x-10">
+        <div className=" lg:flex items-center space-x-8 text-center">
+          {navLinks.map((link) => (
+            <Link
+              key={link.id}
+              href={link.href}
+            >
+              <p className="relative text-white transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 hover:after:w-full after:h-[4px] after:bg-yellow-400 after:transition-all after:duration-300"
+              >{link.label}</p>
+            </Link>
+          ))}
+        </div>
       </div>
       <p className="text-white text-opacity-60 mt-6 text-center">
-      © 2025 All Rights Reserved by Abdelrahman Hamada
+        © 2025 All Rights Reserved by Abdelrahman Hamada
       </p>
     </div>
   )
