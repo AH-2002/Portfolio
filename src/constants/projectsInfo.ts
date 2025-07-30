@@ -6,7 +6,6 @@ export const projects: projectsType[] = [
         github: "https://github.com/AH-2002/movies-app",
         live: "https://noxe-gamma.vercel.app/#/login",
         image: "/images/movies4.png",
-        type: "frameWork"
     },
     {
         title: "E-Commerce Platform",
@@ -14,7 +13,6 @@ export const projects: projectsType[] = [
         github: "https://github.com/AH-2002/e-commerce",
         live: "https://e-commerce-tau-seven-53.vercel.app/",
         image: "/images/e-commerce.png",
-        type: "frameWork"
 
     },
     {
@@ -23,7 +21,13 @@ export const projects: projectsType[] = [
         github: "https://github.com/AH-2002/Ze",
         live: "https://ze-drab.vercel.app/",
         image: "/images/zee.png",
-        type: "frameWork"
 
+    },
+    {
+        title: "Admin Dashboard",
+        description: "Admin Dashboard built with Next.js 15, featuring Clerk authentication, dynamic routing, and responsive UI components. It includes pages for customers, invoices, profile management, and secure auth flows (login/signup). Styled with Tailwind CSS and optimized for production.",
+        github: "https://github.com/AH-2002/Admin-Dashboard",
+        live: "https://admin-dashboard-c7qlpoazr-abdelrahmans-projects-d586fb40.vercel.app/",
+        image: "/images/dashboard.png",
     },
 ];

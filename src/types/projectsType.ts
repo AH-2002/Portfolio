@@ -4,5 +4,4 @@ export interface projectsType {
     github: string;
     live: string;
     image: string;
-    type:string;
   }
