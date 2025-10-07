@@ -4,6 +4,7 @@ import Skills from "@/components/Skills";
 import About from "../components/About";
 import Hero from "../components/Hero";
 import AOSInitializer from "@/components/AOSInitializer";
+import Experience from "@/components/Experience";
 export default function Home() {
 
 
@@ -12,8 +13,9 @@ export default function Home() {
       <AOSInitializer />
       <Hero />
       <About />
-      <Projects />
+      <Experience />
       <Skills />
+      <Projects />
       <Contacts />
     </div>
   );

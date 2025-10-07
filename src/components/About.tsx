@@ -15,9 +15,7 @@ export default function About() {
                 </div>
 
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="150" className="flex flex-col lg:flex-row justify-between items-start gap-12 mt-20 w-full px-4 max-w-6xl mx-auto">
-                    {/* Left Side: Education & Experience */}
                     <div className="flex-1 flex flex-col gap-8">
-                        {/* Education */}
                         <div className="border border-gray-700 p-6 rounded-lg bg-[#0f0f1a] shadow-md">
                             <h2 className="text-xl font-semibold mb-2 text-[#8750f7]">🎓 Education</h2>
                             <p className="text-base text-gray-300 leading-relaxed">
@@ -25,29 +23,8 @@ export default function About() {
                                 Cairo University (2020–2024)
                             </p>
                         </div>
-
-                        {/* Experience */}
-                        <div className="border border-gray-700 p-6 rounded-lg bg-[#0f0f1a] shadow-md">
-                            <h2 className="text-xl font-semibold mb-2 text-[#8750f7]">💼 Experience</h2>
-                            <ul className="text-base text-gray-300 leading-relaxed space-y-4 list-disc list-inside"> 
-                                <li>
-                                    <span className="font-medium">B-circles – Front-End Developer (1/2025 - 3/2025):</span><br />
-                                    Developed and enhanced client websites using React, Next.js, and Tailwind CSS.
-                                </li>
-                                <li>
-                                    <span className="font-medium">Web Masters – Front-End Intern (3/2025 - 7/2025) :</span><br />
-                                    Created dynamic UIs with React and Bootstrap; focused on DOM manipulation with vanilla JS.
-
-                                </li>
-                                <li>
-                                    <span className="font-medium">OVARC – Front-End Intern (Starting 8/2025):</span><br />
-                                    Selected for a front-end internship using JavaScript and React to build user interfaces. Will work in an Agile environment using Jira for task management and Docker for containerized development.
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
-                    {/* Right Side: Tech Stack */}
                     <div className="flex-1 flex flex-col gap-4">
                         <h2 className="text-xl font-semibold mb-2 text-[#8750f7]">🧰 Tech Stack</h2>
 
@@ -84,7 +61,7 @@ export default function About() {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                 </svg>
                             </span>
-                            <p className="text-gray-300">State Management: Redux Toolkit, Context API</p>
+                            <p className="text-gray-300">State Management: Redux Toolkit, TanStack, Context API</p>
                         </div>
 
                         <div className="flex gap-2 items-start">
@@ -93,7 +70,7 @@ export default function About() {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                 </svg>
                             </span>
-                            <p className="text-gray-300">Tools: Git & GitHub, VS Code, Postman, Chrome DevTools</p>
+                            <p className="text-gray-300">Tools: Git & GitHub, VS Code, Postman, Swagger, Chrome DevTools</p>
                         </div>
 
                         <div className="flex gap-2 items-start">

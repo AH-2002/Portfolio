@@ -1,11 +1,10 @@
 import { personalInfo } from '@/constants/PersonalInfo'
-import Image from 'next/image'
 import React from 'react'
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-full h-screen bg-[#0f0715] overflow-hidden relative pt-[4vh] md:pt-[12vh] flex justify-between items-center">
-      <div className="flex flex-col justify-center w-[50%] h-full mx-auto">
+    <section id="hero" className="w-full h-screen bg-[#0f0715] overflow-hidden relative pt-[4vh] md:pt-[12vh]">
+      <div className="flex flex-col justify-center w-[50%] h-full mx-auto text-center">
         <div className="name">
           <h1 data-aos="fade-left" className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
             I am {personalInfo.name}
@@ -18,7 +17,7 @@ export default function Hero() {
         <div data-aos="fade-left" data-aos-delay="200" className="description my-6 text-sm md:text-base text-gray-300">
           <p>{personalInfo.description}</p>
         </div>
-        <div className="hero-button flex flex-col sm:flex-row sm:justify-start w-full gap-4 mt-8">
+        <div className="hero-button flex flex-col sm:flex-row sm:justify-between sm:w-[80%] sm:mx-auto w-full gap-4 mt-8">
           <button
             data-aos="zoom-in"
             data-aos-delay="300"
@@ -76,15 +75,7 @@ export default function Hero() {
         </div>
 
       </div>
-      <div data-aos="zoom-in" data-aos-delay="400"
-        className="personalImage mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden">
-        <Image
-          src={personalInfo.profilePic}
-          alt="Profile Picture"
-          width={400}
-          height={400}
-        />
-      </div>
+     
     </section>
   )
 }
