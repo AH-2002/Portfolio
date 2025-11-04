@@ -27,7 +27,8 @@ export const projects: projectsType[] = [
         title: "Admin Dashboard",
         description: "Admin Dashboard built with Next.js 15, featuring Clerk authentication, dynamic routing, and responsive UI components. It includes pages for customers, invoices, profile management, and secure auth flows (login/signup). Styled with Tailwind CSS and optimized for production.",
         github: "https://github.com/AH-2002/Admin-Dashboard",
-        live: "https://admin-dashboard-c7qlpoazr-abdelrahmans-projects-d586fb40.vercel.app/",
+        live: "https://admin-dashboard-seven-kappa-49.vercel.app/",
+        
         image: "/images/dashboard.png",
     },
 ];
