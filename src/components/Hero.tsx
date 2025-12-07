@@ -1,28 +1,27 @@
-import { personalInfo } from '@/constants/PersonalInfo'
-import React from 'react'
+import { personalInfo } from "@/constants/PersonalInfo";
+import React from "react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-full h-screen bg-[#0f0715] overflow-hidden relative pt-[4vh] md:pt-[12vh]">
+    <section
+      id="hero"
+      className="w-full h-screen bg-[#0f0715] overflow-hidden relative pt-[4vh] md:pt-[12vh]"
+    >
       <div className="flex flex-col justify-center w-[50%] h-full mx-auto text-center">
         <div className="name">
-          <h1 data-aos="fade-left" className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
             I am {personalInfo.name}
           </h1>
         </div>
-        <div data-aos="fade-right" data-aos-delay="100" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent">
+        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent">
           <p>{personalInfo.position}</p>
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="200" className="description my-6 text-sm md:text-base text-gray-300">
+        <div className="description my-6 text-sm md:text-base text-gray-300">
           <p>{personalInfo.description}</p>
         </div>
         <div className="hero-button flex flex-col sm:flex-row sm:justify-between sm:w-[80%] sm:mx-auto w-full gap-4 mt-8">
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="300"
-            className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-blue-700 hover:bg-blue-900"
-          >
+          <button className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-blue-700 hover:bg-blue-900">
             <a
               href="/Abdelrahman-Hamada-Frontend-Resume.pdf"
               download
@@ -46,11 +45,7 @@ export default function Hero() {
             </a>
           </button>
 
-          <button
-            data-aos="zoom-out"
-            data-aos-delay="300"
-            className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-[#8750f7] hover:bg-[#6d3fd0]"
-          >
+          <button className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-[#8750f7] hover:bg-[#6d3fd0]">
             <a
               href="https://github.com/AH-2002"
               target="_blank"
@@ -73,9 +68,7 @@ export default function Hero() {
             </a>
           </button>
         </div>
-
       </div>
-     
     </section>
-  )
+  );
 }

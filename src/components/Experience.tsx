@@ -49,8 +49,7 @@ export default function Experience() {
                 {experiences.map((exp, index) => (
                     <div
                         key={index}
-                        data-aos="fade-up"
-                        data-aos-delay={`${index * 150}`}
+                     
                         className="border border-gray-800 bg-[#0f0f1a] rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                         <h3 className="text-[#8750f7] text-xl font-semibold mb-1">
@@ -67,8 +66,6 @@ export default function Experience() {
 
                         {exp.letterLink && (
                             <button
-                                data-aos="zoom-in"
-                                data-aos-delay="300"
                                 className="w-full sm:w-auto px-6 py-2.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg bg-blue-700 hover:bg-blue-900"
                             >
                                 <a

@@ -1,4 +1,3 @@
-
 import { projectsType } from "@/types/projectsType";
 import React from "react";
 import Image from "next/image";
@@ -14,9 +13,6 @@ export default function Projects() {
           <div
             key={index}
             className="bg-[#0f0f1a] border border-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-transform duration-300 flex flex-col h-[460px]"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-            data-aos-delay={`${index * 150}`}
           >
             {/* Image Wrapper with fixed height and relative positioning */}
             <div className="relative w-full h-[200px]">
